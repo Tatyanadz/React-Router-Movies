@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const Movie = (props) => {
   const [movie, setMovie] = useState();
  
@@ -30,6 +31,8 @@ const Movie = (props) => {
     return <div>Loading movie information...</div>;
   }
 
+  
+
   const { title, director, metascore, stars } = movie;
   return (
     <div className="save-wrapper">
@@ -52,6 +55,7 @@ const Movie = (props) => {
       <div className="save-button">Save</div>
     </div>
   );
+
 }
 
 export default Movie;
